@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'Matrix';
+    src: url(../fonts/matrix.ttf) format('truetype');
+    font-weight: normal;
+}
+@font-face{
+    font-family: 'Bit';
+    src: url(../fonts/PixelOperatorMono.ttf) format('truetype');
+    font-weight: normal;
+}
+
+:root{
+    --font-matrix: 'Matrix', Arial, sans-serif;
+    --font-bit: 'Bit', Arial, sans-serif;
+}
+*{
+    font-family: var(--font-bit);
+}
+body{
+    background-color: rgb(33, 13, 214);
+}
+main{
+    background-color: rgb(25, 44, 219);
+    max-width: 1000px;
+    max-height: auto;
+    margin: auto;
+    padding: 15px;
+    padding-bottom: 20px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    border: 2px solid rgb(65, 99, 194);
+    text-align: justify;
+}
+article{
+    color: green;
+}
+article > h1{
+    font-family: var(--font-matrix);
+    font-size: 2em;
+}
+article > p{
+    font-size: 1.2em;
+}
+ul{
+    border: 1px solid green;
+}
+ul > h2,h3 {
+    text-align: center;
+    font-size: 1.8em;
+    text-decoration: underline;
+}
+li{
+    padding: 10px;
+    border: 1px solid green;
+    margin-bottom: 13px;
+    margin-right: 10px;
+}
+li > a{
+    color: green;
+    text-decoration: none;
+
+}
+li >a:hover{
+    text-decoration: underline;
+    color: greenyellow;
+}
+#copyright {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0px;
+    font-size: 0.8em;
+
+}
